@@ -110,4 +110,7 @@ body {
         width: 90%; /* Adjust countdown width for very small screens */
        /* grid-template-columns: 1fr; /* Change to 1 column */
     }
+    footer{
+        background-color: white;
+    }
 }
