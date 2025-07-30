@@ -4,7 +4,7 @@ body {
     align-items: center; /* Center elements horizontally */
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.842), #109f00); /* top to bottom gradient */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.842), #0c6203); /* top to bottom gradient */
     color: white;
     font-family: 'Arial', sans-serif;
 }
