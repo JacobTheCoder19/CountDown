@@ -18,81 +18,32 @@ body {
 }
 
 .countdown-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: stretch; /* Stretch items to fill the container */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
     width: 90%; /* Set the width of the container */
     max-width: 1200px; /* Maximum width for larger screens */
 }
 
 .celebration-image {
-    width: 20%; /* Default width of the image for larger screens */
+    width: 100%; /* Make images take full width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the area without distortion */
 }
 
-.countdown {
-    display: grid; /* Use grid for countdown boxes */
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Space between boxes */
-    width: 60%; /* Set the width of the countdown to take 60% of the container */
-    padding: 20px; /* Add some padding */
-}
-
-.time {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    font-size: 3vw; /* Responsive font size */
-    transition: transform 0.3s;
-}
-
-.time:hover {
-    transform: scale(1.1);
-}
-
-.time span {
-    display: block;
-    font-size: 0.5em; /* Fixed size for labels */
-    color: #ccc;
-}
-
 /* Media Queries for additional responsiveness */
-@media (max-width: 768px) {
-    .celebration-image {
-        width: 30%; /* Adjust image width for smaller screens */
-    }
-
-    .countdown {
-        width: 70%; /* Adjust countdown width for smaller screens */
-    }
-
-    .celebration-title {
-        font-size: 6vw; /* Increase title font size for smaller screens */
-    }
-}
-
 @media (max-width: 480px) {
     .countdown-container {
-        flex-direction: row; /* Keep image and countdown side by side */
-        align-items: flex-start; /* Align items to the top */
+        flex-direction: column; /* Ensure images stack vertically */
     }
 
     .celebration-image {
-        width: 35%; /* Make the image larger for very small screens */
+        width: 100%; /* Full width for images on small screens */
+        height: 200px; /* Set a fixed height for uniformity */
     }
 
     .countdown {
-        width: 65%; /* Adjust countdown width for very small screens */
-        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
-        gap: 20px; /* Increase gap for better spacing */
-    }
-
-    .time {
-        padding: 30px; /* Increase padding for larger countdown boxes */
-        font-size: 4vw; /* Increase font size for countdown boxes */
-    }
-
-    .celebration-title {
-        font-size: 8vw; /* Further increase title font size for very small screens */
+        width: 100%; /* Adjust countdown width for small screens */
+        grid-template-columns: 1fr; /* Change to 1 column */
     }
 }
