@@ -58,12 +58,14 @@ body {
 
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
-    .celebration-image {
-        width: 30%; /* Adjust image width for smaller screens */
+    .countdown-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center images horizontally */
     }
-
-    .countdown {
-        width: 70%; /* Adjust countdown width for smaller screens */
+    .celebration-image {
+        width: 80%; /* Set a smaller width for images on mobile */
+        height: 200px; /* Set a fixed height for uniformity */
+        margin-bottom: 10px; /* Space between images */
     }
 
     .celebration-title {
