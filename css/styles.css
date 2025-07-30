@@ -102,7 +102,7 @@ body {
 
 @media (max-width: 480px) {
     .celebration-image {
-        width: 20%; /* Make the image larger for very small screens */
+        width: 70%; /* Make the image larger for very small screens */
         height: 200px; /* Set a fixed height for uniformity */
     }
 
