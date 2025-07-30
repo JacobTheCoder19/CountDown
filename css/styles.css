@@ -67,9 +67,8 @@ body {
         height: 200px; /* Set a fixed height for uniformity */
         margin-bottom: 10px; /* Space between images */
     }
-
-    .celebration-title {
-        font-size: 6vw; /* Increase title font size for smaller screens */
+    .countdown {
+        width: 80%; /* Adjust countdown width for smaller screens */
     }
 }
 
